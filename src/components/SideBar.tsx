@@ -1,6 +1,5 @@
 import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
-import { Link } from 'react-router-dom';
-import Logo from "../assets/react.svg"
+import Logo from "../assets/image.png"
 import { RxDashboard } from "react-icons/rx";
 import { FaHotel } from "react-icons/fa6";
 import { LuShieldQuestion } from "react-icons/lu";
@@ -23,9 +22,9 @@ const SideBar = () => {
                             backgroundColor: '#db147f',
                             color: '#ffffff',
                         },
-                    },
+                    }
                 }}>
-                    <div className="p-4"><img className="mx-auto" src={Logo}></img></div>
+                    <div className="p-4 cursor-pointer"><img className="mx-auto" src={Logo}></img></div>
                     <MenuItem icon={<RxDashboard />}>Dashboard</MenuItem>
                     <MenuItem active icon={<FaHotel />}>My Centre</MenuItem>
                     <MenuItem icon={<LuShieldQuestion />}>Enquiries</MenuItem>
